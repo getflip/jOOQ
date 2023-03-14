@@ -8192,7 +8192,6 @@ public class JavaGenerator extends AbstractGenerator {
 
     private boolean effectivelyNotNull(DataTypeDefinition type) {
         return !type.isNullable()
-            && !type.isDefaulted()
             && !type.isIdentity();
     }
 
